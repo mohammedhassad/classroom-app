@@ -3,6 +3,7 @@ import compress from "compression";
 import cookieParser from "cookie-parser";
 import helmet from "helmet";
 import cors from "cors";
+import path from "path";
 
 import config from "./config/config";
 
@@ -34,6 +35,18 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/courses", courseRoutes);
 app.use("/api/enrollment", enrollmentRoutes);
+
+if (config.env === "production") {
+  app.use(express.static(path.join(__dirname, "client", "build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  });
+} else {
+  app.get("*", (req, res) => {
+    res.send("App running on development...");
+  });
+}
 
 // 7. Handle Error
 // Catch unauthorised errors

@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node -r esm .",
-    "dev": "nodemon -r esm ."
+    "dev": "nodemon -r esm .",
+    "heroku-postbuild": "cd client && yarn install && INLINE_RUNTIME_CHUNK=false yarn build"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
