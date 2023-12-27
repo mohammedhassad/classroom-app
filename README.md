@@ -58,8 +58,8 @@ Create a `.env` file in the root directory and set the required environment vari
  cd classroom-app
  npm start  # The application will be accessible at http://localhost:5000
 
-  cd client
-  npm start  # The application will be accessible at http://localhost:5173
+cd client
+npm start  # The application will be accessible at http://localhost:5173
 ```
 
 ## Tech Stack
