@@ -86,6 +86,7 @@ classroom-app/
 |-- package.json       # Node.js dependencies and scripts
 |-- README.md          # Project documentation
 |-- example.env        # Example environment variable file
+|-- LICENSE            # License file for the project
 ```
 
 ## Contributing
