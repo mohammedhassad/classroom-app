@@ -1,21 +1,24 @@
 {
-  "name": "server",
+  "name": "classroom-app",
   "version": "1.0.0",
   "main": "index.js",
   "author": "mohammed hassad",
   "license": "MIT",
   "scripts": {
-    "start": "node -r esm .",
-    "dev": "nodemon -r esm .",
-    "heroku-postbuild": "cd client && yarn install && INLINE_RUNTIME_CHUNK=false yarn build"
+    "dev": "nodemon --exec babel-node ./index.js",
+    "start": "babel-node ./index.js",
+    "build": "cd client && npm run build"
   },
   "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
     "bcryptjs": "^2.4.3",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "esm": "^3.2.25",
     "express": "^4.17.1",
     "express-jwt": "^6.0.0",
     "formidable": "^1.2.2",

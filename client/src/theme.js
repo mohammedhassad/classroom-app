@@ -1,9 +1,9 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@mui/material";
 
-const theme = createMuiTheme({
-  typography: {
-    useNextVariants: true,
-  },
+const theme = createTheme({
+  // typography: {
+  //   useNextVariants: true,
+  // },
   palette: {
     primary: {
       light: "#8e8e8e",
@@ -20,6 +20,9 @@ const theme = createMuiTheme({
     openTitle: "#455a64",
     protectedTitle: "#f57c00",
     type: "light",
+  },
+  elevation: {
+    1: "0px 0px 0px 1px rgb(140 140 140/.2)",
   },
 });
 
