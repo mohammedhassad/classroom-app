@@ -41,11 +41,11 @@ A step by step series of examples that tell you how to get a development env run
 2. **Install dependencies:**
 
 ```bash
- cd classroom-app
- npm install
+cd classroom-app
+npm install
 
- cd client
- npm install
+cd client
+npm install
 ```
 
 3. **Set up the environment variables:**
@@ -55,8 +55,8 @@ Create a `.env` file in the root directory and set the required environment vari
 4. **Run the application:**
 
 ```bash
- cd classroom-app
- npm start  # The application will be accessible at http://localhost:5000
+cd classroom-app
+npm start  # The application will be accessible at http://localhost:5000
 
 cd client
 npm start  # The application will be accessible at http://localhost:5173
