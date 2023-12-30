@@ -35,7 +35,7 @@ A step by step series of examples that tell you how to get a development env run
 1. **Clone the repository:**
 
 ```bash
- git clone https://github.com/mohammedhassad/classroom-app.git
+git clone https://github.com/mohammedhassad/classroom-app.git
 ```
 
 2. **Install dependencies:**
@@ -99,4 +99,4 @@ Feel free to email me at [Email](mailto:mohammed.hassad98@gmail.com) or [Lnkedin
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/license/mit/). Feel free to use, modify, and distribute the code.
+This project is licensed under the [MIT License](/LICENSE). Feel free to use, modify, and distribute the code.
