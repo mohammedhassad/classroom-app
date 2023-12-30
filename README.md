@@ -50,7 +50,7 @@ npm install
 
 3. **Set up the environment variables:**
 
-Create a `.env` file in the root directory and set the required environment variables. You can use the provided `example.env` as a template.
+   Create a `.env` file in the root directory and set the required environment variables. You can use the provided `example.env` as a template.
 
 4. **Run the application:**
 
